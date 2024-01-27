@@ -46,7 +46,7 @@ const taskReducer = (state, action) => {
     case SEARCH_TASK:
       return {
         ...state,
-        tasks: action.payload.tasks,
+        tasks: [...action.payload.tasks],
       };
     default:
       return state;
