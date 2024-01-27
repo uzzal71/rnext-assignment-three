@@ -34,6 +34,7 @@ export default function TaskList({ onEditTask }) {
     toast.error(`The task "${task.title}" is removed in the task list.`, {
       position: "bottom-right",
     });
+    setshowDeleteModal(false);
   };
 
   return (
